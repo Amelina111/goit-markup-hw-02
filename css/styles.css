@@ -3,10 +3,15 @@
   --default-text-color: #212121;
   --contacts-color: #757575;
   --hero-button-color: #ffffff;
+  --hero-bg-color: #2f303a;
   --logo-sufix-color: #ffffff;
   --logo-theme-light-color: #2f303a;
   --footer-color: #2f303a;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --team-bg-color: #f5f4fa;
+  --filter-button-bg-color: #f5f4fa;
+  --hero-title-color: #ffffff;
+  --team-color: #f5f4fa;
 }
 
 .link {
@@ -55,6 +60,11 @@ body {
 .menu-link:focus {
   color: var(--highlight-color);
 }
+
+.menu-link:active {
+  color: var(--highlight-color);
+}
+
 .mail {
   font-weight: 500;
   font-size: 14px;
@@ -92,6 +102,9 @@ body {
 /* ========= /COMPONENTS ======= */
 
 /* ======== body-elements =======*/
+.hero {
+  background-color: var(--hero-bg-color);
+}
 
 .hero-title {
   font-weight: 900;
@@ -100,7 +113,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color: #FFFFFF; */
+  color: var(--hero-title-color);
 }
 
 .hero-button {
@@ -125,6 +138,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  background-color: var(--filter-button-bg-color);
 }
 
 .filter-button:hover,
@@ -145,6 +159,9 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--contacts-color);
+}
+.team {
+  background-color: var(--team-color);
 }
 
 .name {
