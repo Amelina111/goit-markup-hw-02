@@ -1,9 +1,12 @@
 :root {
-    --highlight-color: #2196f3;
-    --default-text-color: #212121;
-    --contacts-color: #757575;
-    --hero-button-color: #ffffff;
-    --logo-theme-light-color: #2f303a;
+  --highlight-color: #2196f3;
+  --default-text-color: #212121;
+  --contacts-color: #757575;
+  --hero-button-color: #ffffff;
+  --logo-sufix-color: #ffffff;
+  --logo-theme-light-color: #2f303a;
+  --footer-color: #2f303a;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 .link {
@@ -25,6 +28,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: var(--default-text-color);
 }
 
 .logo-prefix {
@@ -32,7 +36,7 @@ body {
 }
 
 .logo-theme-dark {
-  /* color: #FFFFFF; */
+  color: var(--logo-sufix-color);
 }
 
 .logo-theme-light {
@@ -100,6 +104,7 @@ body {
 }
 
 .hero-button {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -113,6 +118,7 @@ body {
 }
 
 .filter-button {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -123,6 +129,8 @@ body {
 
 .filter-button:hover,
 .filter-button:focus {
+  background-color: var(--highlight-color);
+  color: var(--hero-button-color);
 }
 
 .portfolio-title {
@@ -165,6 +173,10 @@ body {
 
 /* ======== /body-elements ====== */
 
+footer {
+  background-color: var(--footer-color);
+}
+
 .desc {
   font-size: 14px;
   line-height: 1.71;
@@ -172,17 +184,22 @@ body {
   color: var(--contacts-color);
 }
 
+address {
+  font-style: normal;
+}
+
 .address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /* color: #FFFFFF*/
+  color: var(--hero-button-color);
 }
+
 .contacts {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /* color: rgba(255, 255, 255, 0.6); */
+  color: var(--footer-contacts-color);
 }
